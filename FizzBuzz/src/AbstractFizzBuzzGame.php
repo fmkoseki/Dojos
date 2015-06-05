@@ -20,7 +20,7 @@ abstract class AbstractFizzBuzzGame
     /**
      * Generates the output
      */
-    public function generate()
+    protected function generate()
     {
         for (
             $number =  $this->fizzBuzzRules->getStartRange();
@@ -50,8 +50,10 @@ abstract class AbstractFizzBuzzGame
         return $resultWord;
     }
 
-    public function showOutput()
+    public function showGameOutput()
     {
+        $this->generate();
+        
         return $this->gameOutput;
     }
 }
