@@ -31,7 +31,7 @@ class FizzBuzzRules implements InterfaceFizzBuzzRules
      */
     protected $rules = [];
 
-    public function __construct(FizzBuzzMultiples $multiples)
+    public function __construct(FizzBuzzMultiplesRule $multiples)
     {
         $this->rules = [
             $multiples
